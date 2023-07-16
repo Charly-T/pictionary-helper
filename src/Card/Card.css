@@ -1,0 +1,36 @@
+.card.yellow {
+    --color-1: #facf0f;
+    --color-2: #faff63;
+}
+
+.card.blue {
+    --color-1: #26baee;
+    --color-2: #9fe8fa;
+}
+
+.card.orange {
+    --color-1: #fc8a15;
+    --color-2: #fff6a2;
+}
+
+.card.green {
+    --color-1: #00bd56;
+    --color-2: #f9fd50;
+}
+
+.card.red {
+    --color-1: #fa4659;
+    --color-2: #c9007f;
+}
+
+.card {
+    width: 200px;
+    aspect-ratio: 4 / 3;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--color-1) 0%, var(--color-2) 100%);
+    color: black;
+}
+
+.round {
+    display: flex;
+}
