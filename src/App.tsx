@@ -82,8 +82,11 @@ function App() {
   return (
     <>
       <div>Dice roll: {randomNumber}</div>
-      {gameState.teams.map((team, index) => (
-        <div key={index}>
+      <div>
+        Currently playing: {gameState.teams[gameState.currentTeam].name}
+      </div>
+      {gameState.teams.map((team) => (
+        <div key={team.name}>
           {team.name}: {team.position}
         </div>
       ))}
